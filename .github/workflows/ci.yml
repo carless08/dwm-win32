@@ -10,7 +10,6 @@ on:
       - 'v0.[0-9]+.[0-9]+'
       - 'v0.[0-9]+.[0-9]+-beta.[0-9]+'
       - 'v0.[0-9]+.[0-9]+-alpha.[0-9]+'
-    
 
 jobs:
   build:
@@ -35,6 +34,10 @@ jobs:
     - name: Build
       shell: cmd
       run: build.cmd
+
+    - name: List directory contents for debugging
+      shell: cmd
+      run: dir
 
     - name: Create draft release and upload asset
       uses: softprops/action-gh-release@v2

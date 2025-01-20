@@ -46,4 +46,4 @@ jobs:
         draft: true
         files: dwm-win32.exe
       env:
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
